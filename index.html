@@ -137,49 +137,44 @@
     <section id="adoptSection" style="display:none">
       <h2>Adoption Form</h2>
       <form id="adoptForm" action="https://formspree.io/f/xblzkezp" method="POST">
+  <div class="row">
+    <div>
+      <label for="fullName">Full Name</label>
+      <input name="name" id="fullName" required />
+      <span class="error" id="errName"></span>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input name="email" id="email" type="email" required />
+      <span class="error" id="errEmail"></span>
+    </div>
+  </div>
+  <div class="row">
+    <div>
+      <label for="phone">Phone Number</label>
+      <input name="phone" id="phone" type="tel" required />
+      <span class="error" id="errPhone"></span>
+    </div>
+    <div>
+      <label for="date">Preferred Adoption Date</label>
+      <input name="adoption_date" id="date" type="date" required />
+      <span class="error" id="errDate"></span>
+    </div>
+  </div>
+  <label for="address">Address</label>
+  <input name="address" id="address" required />
+  <span class="error" id="errAddress"></span>
+  <label for="petSelect">Preferred Pet</label>
+  <select name="preferred_pet" id="petSelect" required></select>
+  <span class="error" id="errPet"></span>
+  <label for="notes">Additional Notes</label>
+  <textarea name="notes" id="notes" rows="4" placeholder="Tell us about your home, yard, other pets, etc."></textarea>
+  <div class="actions">
+    <button class="primary" type="submit">Submit</button>
+    <button class="ghost" type="reset">Reset</button>
+  </div>
+</form>
 
-        <div class="row">
-          <div>
-            <label for="fullName">Full Name</label>
-            <input id="fullName" required />
-            <span class="error" id="errName"></span>
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input id="email" type="email" required />
-            <span class="error" id="errEmail"></span>
-          </div>
-        </div>
-
-        <div class="row">
-          <div>
-            <label for="phone">Phone Number</label>
-            <input id="phone" type="tel" required />
-            <span class="error" id="errPhone"></span>
-          </div>
-          <div>
-            <label for="date">Preferred Adoption Date</label>
-            <input id="date" type="date" required />
-            <span class="error" id="errDate"></span>
-          </div>
-        </div>
-
-        <label for="address">Address</label>
-        <input id="address" required />
-        <span class="error" id="errAddress"></span>
-
-        <label for="petSelect">Preferred Pet</label>
-        <select id="petSelect" required></select>
-        <span class="error" id="errPet"></span>
-
-        <label for="notes">Additional Notes</label>
-        <textarea id="notes" rows="4" placeholder="Tell us about your home, yard, other pets, etc."></textarea>
-
-        <div class="actions">
-          <button class="primary" type="submit">Submit</button>
-          <button class="ghost" type="reset">Reset</button>
-        </div>
-      </form>
     </section>
 
     <section id="storyBlock" style="display:none">
