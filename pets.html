@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Browse Pets</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🐾 Find Your Pet</h1>
+    <nav>
+        <a href="index.html">Home</a>
+      <a href="pets.html">Find Pets</a>
+      <a href="favorites.html">Favorites</a>
+      <a href="adopt.html">Adopt</a>
+      <a href="donate.html">Donate</a>
+      <a href="subscribe.html">Subscribe</a>
+      <button id="logoutBtn">Logout</button>
+    </nav>
+  </header>
+
+   <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search pets...">
+    <select id="filterSelect">
+      <option value="All">All</option>
+      <option value="Dog">Dog</option>
+      <option value="Cat">Cat</option>
+      <option value="Rabbit">Rabbit</option>
+    </select>
+  </div>
+
+  <section id="petList" class="pet-list"></section>
+
+<footer>
+  <p>Contact us: <a href="mailto:adoptions@gmail.com">adoptions@gmail.com</a> | Phone: +91 98765 43210</p>
+  <p>Address: 1304 Pet Street, Ahmedabad, Gujarat | Working Hours: Mon-Sat 10AM - 6PM</p>
+  <p>© 2025 Pet Adoption Finder</p>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adopt a Pet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🐕 Adoption Form</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="pets.html">Find Pets</a>
+      <a href="favorites.html">Favorites</a>
+      <a href="adopt.html">Adopt</a>
+      <a href="donate.html">Donate</a>
+      <a href="subscribe.html">Subscribe</a>
+      <button id="logoutBtn">Logout</button>
+    
+    </nav>
+  </header>
+
+  <section class="form-section">
+
+<form action="submit_adoption.php" method="POST" id="adoptForm">
+  <label for="name">Full Name:</label>
+  <input name="full_name" type="text" id="name" required><br>
+
+  <label for="email">Email:</label>
+  <input type="email" name="email" id="email" required>
+  <span id="emailError" class="error"></span><br>
+
+  <label for="phone">Phone Number:</label>
+  <input type="text" name="phone" id="phone" required>
+  <span id="phoneError" class="error"></span><br>
+
+  <label for="address">Address:</label>
+  <input type="text" name="address" id="address" required><br>
+
+  <label for="preferred_pet" for="petChoice">Preferred Pet:</label>
+  <select id="petChoice" required>
+     <option value="">Select a Pet</option>
+     
+  <option value="Snookey">Snookey (Dog)</option>
+  <option value="Milo">Milo (Cat)</option>
+  <option value="Rover">Rover (Dog)</option>
+  <option value="Luna">Luna (Rabbit)</option>
+  <option value="Stark">Stark (Dog)</option>
+  <option value="Snow">Snow (Cat)</option>
+  <option value="Buffy">Buffy (Dog)</option>
+  <option value="Bugs">Bugs (Rabbit)</option>
+  <option value="Jerry">Jerry (Dog)</option>
+  <option value="Lara">Lara (Cat)</option>
+  <option value="Jack">Jack (Dog)</option>
+  <option value="Bella">Bella (Cat)</option>
+  <option value="Simba">Simba (Dog)</option>
+  <option value="Cloud">Cloud (Rabbit)</option>
+  <option value="Buddy">Buddy (Dog)</option>
+  <option value="Oliver">Oliver (Cat)</option>
+  <option value="Rio">Rio (Dog)</option>
+  <option value="Sugar">Sugar (Rabbit)</option>
+  <option value="Genie">Genie (Dog)</option>
+  <option value="Kitty">Kitty (Cat)</option>
+  <option value="Blue">Blue (Dog)</option>
+  <option value="Peter">Peter (Rabbit)</option>
+  <option value="Sara">Sara (Dog)</option>
+  <option value="Max">Max (Dog)</option>
+  </select><br><br>
+
+  <label for="adoptionDate">Preferred Adoption Date:</label>
+  <input type="date" name="adoption_date" id="adoptionDate"><br><br>
+
+  <label for="notes">Additional Notes:</label>
+  <textarea id="notes" rows="4" name="notes" placeholder="Any special requests or info..."></textarea><br><br>
+
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+</form>
+
+  </section>
+
+
+<footer>
+  <p>Contact us: <a href="mailto:adoptions@gmail.com">adoptions@gmail.com</a> | Phone: +91 98765 43210</p>
+  <p>Address: 1304 Pet Street, Ahmedabad, Gujarat | Working Hours: Mon-Sat 10AM - 6PM</p>
+  <p>© 2025 Pet Adoption Finder</p>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

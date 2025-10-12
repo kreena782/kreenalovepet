@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Subscribe | Pet Adoption Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🐾 Pet Adoption Finder</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="pets.html">Find Pets</a>
+      <a href="favorites.html">Favorites</a>
+      <a href="adopt.html">Adopt</a>
+      <a href="donate.html">Donate</a>
+      <a href="subscribe.html">Subscribe</a>
+      <button id="logoutBtn">Logout</button>
+    </nav>
+  </header>
+
+  <section class="support-section">
+    <h2>📬 Stay Updated</h2>
+    <p>Subscribe to our newsletter to receive adoption stories and shelter updates!</p>
+
+   <form action="submit_subscribe.php" method="POST">
+    <label>Email:</label>
+    <input type="email" name="email" required>
+    <button type="submit">Subscribe</button>
+</form>
+
+    <p id="newsletterMsg"></p>
+  </section>
+
+  <footer>
+    <p>Contact us: <a href="mailto:adoptions@gmail.com">adoptions@gmail.com</a> | Phone: +91 98765 43210</p>
+    <p>© 2025 Pet Adoption Finder</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
